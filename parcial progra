@@ -1,0 +1,90 @@
+#EJERCICIO_1
+print("¡Hola a","'" todos "'", "y'" todas!'"')
+
+#EJERCICIO_2
+user = input("Porfavor ingrese el username a utilizar:")
+print("!Hola", user, "!")
+
+#Ejercicio 3
+print("A ", "\tB ", "\tQ" )
+print("*******************")
+print("0", "\t0", "\n0", "\t1", "\n1", "\t0", "\n1", "\t1")
+z = 0
+while z<4:
+    z = z+1
+    a = int(input("Porfavor ingrese a: "))
+    b = int(input("Porfavor ingrese b: "))
+    if (a == 0 and b == 0):
+        print('Q = 0')
+    elif (a == 0 and b == 1):
+        print('Q = 1')
+    elif (a == 1 and b == 0):
+        print('Q = 1')
+    elif (a == 1 and b == 1):
+        print('Q = 1')
+    
+        
+#Ejercicio 4
+a = int(input("Ingrese el numero de horas estudiadas:"))
+b = int(input("Ingrese el tiempo promedio por dia:"))
+c = a + b
+print("El estudiante cuenta con",c,"horas de estudio totales")
+
+#Ejercicio 5
+def negativo(n):
+    return (n*(n+1))/2
+a = int(input('Introduzca el numero M: '))
+total = negativo(a)    
+print("El total es:" ,total)
+
+#Ejercicio 6
+peso = int(input("Ingrese su peso en libras: "))
+altura = float(input("Ingrese su altura en metros:"))
+variable1 = p/2.2046
+indice = float(variable1/(e**2))
+total = round(indice, 2) #redondeo -> cuantos decimales
+print("Su indice de masa corporal es de:", total)
+
+#Ejercicio 7
+a = float(input("Ingrese su primer digito en decimal:"))
+b = float(input("Ingrese su segundo digito en decimal:"))
+c =a/b
+d = a%b
+e = round (c, 2)
+f = round (d, 2)
+print("El resultado de la disivion es:", e)
+print("y su residuo es:", f)
+
+#Ejercicio 8
+a = float(input("Ingrese el monto a invertir:"))
+b = float(input("Ingrese el interes por año:"))
+c = float(input("Ingrese la totalidad de años:"))
+d = float(b/100)
+i = a*d*c
+f = a + e
+g = round(f, 2)
+print("*******************")
+print("El capital total obtenido es:", g)
+
+#Ejercicio 9
+b = 112
+s = 75
+print("*****BIENVENIDO A LA FERRETERIA*****")
+barr = int(input("Ingrese la cantidad vendida de barrenos del ultimo pedido:"))
+sierr = int( input("Ingrese la cantidad vendida de sierras del ultimo pedido:"))
+totalb = b*barr
+totals = s*sierr
+totalpeso = totalb+totals
+print("****************")
+print("El paquete pesa",totalpeso,"kg")
+
+#Ejercicio 10
+ram = 20
+ramusada = ram * 0.60
+a = int(input("Cuantas rams quiere comprar:"))
+b = a *ram
+c = a *ramusada
+d = b-c
+print("El precio si descuento es de:", b)
+print("El descuento aplicado sera de:, d)
+print("Precio con descuento aplicado sera de: ", c)
